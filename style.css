@@ -41,4 +41,83 @@ nav ul li a{
 nav ul li a:hover{
     background-color: #9fa6a1;
     color: #4e524f;
+    border-bottom: 1px solid black;
+}
+
+.content-name-details{
+    position: relative;
+    top: 30px;
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    background: #fcfcfc;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content-name-details img{
+    position: absolute;
+    right: 3%;
+    top: 8%;
+}
+
+.content-name-details .details-header{
+    padding: 15px;
+    margin-left: 3%;
+    width: 60%;
+    border-bottom: 1px solid #dbd7d7;
+}
+
+.content-name-details .details-header h1{
+    font-size: 50px;
+    color: #4f4f4f;
+}
+
+.content-name-details .details-header p{
+    font-size: 15px;
+}
+
+.content-name-details .information table{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.content-name-details .information table td{
+    padding: 10px 20px;
+}
+
+.content-name-details .information .fa{
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: all 200ms ease;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content-name-details .information .fa:hover{
+    background: red;
+    color: black;
+}
+
+.content-name-details .information .fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.content-name-details .information .fa-instagram{
+    background: #531180;
+    color: white;
+}
+
+.content-name-details .information .fa-twitter{
+    background: #3B5998;
+    color: white;
+}
+
+.content-name-details .information .fa-github{
+    background: #000;
+    color: #fff;
 }
