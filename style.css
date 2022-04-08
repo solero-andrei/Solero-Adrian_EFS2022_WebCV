@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@800;900&display=swap');
 
 *{
     margin: 0;
@@ -18,8 +18,11 @@ body{
 
 .container video{
     position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
     z-index: -1;
-    border: 1px solid black;
 }
 
 header{
@@ -54,12 +57,17 @@ nav ul li a:hover{
     border-bottom: 1px solid black;
 }
 
-.content-name-details{
+.basic-information{
     position: relative;
-    top: 30px;
+    width: 100%;
+    height: 95vh;
+}
+
+.content-name-details{
+    position: absolute;
+    transform: translate(13%, 10%);
     width: 80%;
     height: 70vh;
-    margin: 0 auto;
     background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 11%,rgba(255,255,255,0.3) 12%,rgba(255,255,255,1) 29%,rgba(255,255,255,0.3) 100%);;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
@@ -69,6 +77,7 @@ nav ul li a:hover{
     right: 3%;
     top: 8%;
     border-radius: 50%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .content-name-details .details-header{
@@ -78,9 +87,13 @@ nav ul li a:hover{
     border-bottom: 1px solid #dbd7d7;
 }
 
+.content-name-details .details-header p{
+    color: #287094;
+}
+
 .content-name-details .details-header h1{
     font-size: 50px;
-    color: #4f4f4f;
+    color: #287094;
 }
 
 .content-name-details .details-header p{
@@ -131,4 +144,93 @@ nav ul li a:hover{
 .content-name-details .information .fa-github{
     background: #000;
     color: #fff;
+}
+
+.biography-container{
+    background: #fff;
+    width: 100%;
+    background: url("Images/technology.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#biography{
+    display: flex;
+    gap: 1.5rem;
+    padding: 50px;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#biography > div{
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+}
+
+#biography h3{
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    color: #287094;
+    border-bottom: 1px solid #dbd7d7;
+}
+
+#skills{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+}
+
+#skills h3{
+    padding: 10px;
+    font-size: 30px;
+    color: #393D3F;
+}
+
+#skills p{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #287094;
+}
+
+#skills .technologies{
+    display: flex;
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    transform: translate(0%, 30%);
+}
+
+#skills .technologies .programming-panel{
+    text-align: center;
+    width: 15%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+}
+
+#skills .technologies .progLang-icon{
+    padding: 10px;
+    background: #393D3F;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#skills .technologies span{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#skills .checked{
+    color: orange;
 }
