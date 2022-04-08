@@ -16,8 +16,18 @@ body{
     font-family: 'Montserrat';
 }
 
-nav ul{
+.container video{
+    position: fixed;
+    z-index: -1;
+    border: 1px solid black;
+}
+
+header{
     width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+nav ul{
     display: flex;
     flex-wrap: wrap;
 }
@@ -50,14 +60,15 @@ nav ul li a:hover{
     width: 80%;
     height: 70vh;
     margin: 0 auto;
-    background: #fcfcfc;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 11%,rgba(255,255,255,0.3) 12%,rgba(255,255,255,1) 29%,rgba(255,255,255,0.3) 100%);;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
-.content-name-details img{
+.content-name-details #profile-photo{
     position: absolute;
     right: 3%;
     top: 8%;
+    border-radius: 50%;
 }
 
 .content-name-details .details-header{
